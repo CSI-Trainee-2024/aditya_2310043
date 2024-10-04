@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booknest</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        const showSidebar = () => {
+            const sideBar = document.querySelector(".sidebar");
+            sideBar.style.display = "flex";
+        }
+        const closeSidebar = () => {
+            const sidebar = document.querySelector(".sidebar")
+            sidebar.style.display = 'none';
+        }
+    </script>
+</head>
+
+<body>
+    <!-- header seaction  -->
+
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=closeSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <ul>
+                <li id="logo"><a href="#">𝓑𝓸𝓸𝓴𝓝𝑒𝓼𝓽 </a></li>
+                <li class="hideOnMobile"><a href="#home">Home</a></li>
+                <li class="hideOnMobile"><a href="#">Destinations</a></li>
+                <li class="hideOnMobile"><a href="#">Packages</a></li>
+                <li class="hideOnMobile"><a href="#">Blogs</a></li>
+                <li class="hideOnMobile"><a href="#">Contact Us</a></li>
+                <li class="menuButton" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
+            </ul>
+        </nav>
+        <main id="home">
+            <div class="main1">
+                <div class="content">
+                    <h1>Your &nbsp;Ultimate<br> Travel <br>Partner</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex error totam alias suscipit commodi
+                        in eligendi eos labore ea ipsum! Voluptatum ex nulla deleniti fuga.</p>
+                    <form>
+                        <input type="text" placeholder="Search...">
+                        <button type="submit"  class="btn"><a href="#"><a href="./images/icons8-search.svg"></a></button>
+                    </form>
+                </div>
+                <div class="">
+                       
+                </div>
+            </div>
+        </main>
+    </header>
+</body>
+
+</html>
