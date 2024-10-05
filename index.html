@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1.0 ,user-scalable=no">
     <title>Booknest</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/favicon.ico">
     <script>
         const showSidebar = () => {
             const sideBar = document.querySelector(".sidebar");
@@ -30,7 +31,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#destination">Destinations</a></li>
             <li><a href="#packages">Packages</a></li>
-            <li><a href="#">Blogs</a></li>
+            <li><a href="#Blogs">Blogs</a></li>
             <li><a href="#">Contact Us</a></li>
         </ul>
         <ul>
@@ -38,7 +39,7 @@
             <li class="hideOnMobile"><a href="#home">Home</a></li>
             <li class="hideOnMobile"><a href="#destination">Destinations</a></li>
             <li class="hideOnMobile"><a href="#packages">Packages</a></li>
-            <li class="hideOnMobile"><a href="#">Blogs</a></li>
+            <li class="hideOnMobile"><a href="#Blogs">Blogs</a></li>
             <li class="hideOnMobile"><a href="#">Contact Us</a></li>
             <li class="menuButton" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
                         height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
@@ -212,6 +213,51 @@
             </div>
         </div>
     </section>
+
+    <!-- Blog Section -->
+
+    <section class="blog" id="Blogs">
+        <div class="blog-heading">
+            <span>My Recent Posts</span>
+            <h3>My Blogs</h3>
+        </div>
+        <div class="blog-container">
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="./images/blog1.jpg " alt="">
+                </div>
+                <div class="blog-text">
+                    <span>18 July 2024 / Web Design</span>
+                    <a href="#" class="blog-title">What has Happened Of all of the Web Design Ideas??</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut laboriosam expedita rem ex maxime? Aut laboriosam magni iure, deleniti ducimus a illum mollitia aspernatur vero, dolorem dolorum cumque eveniet in.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="./images/blog2.jpg " alt="">
+                </div>
+                <div class="blog-text">
+                    <span>24 August 2024 /About Photgraphy</span>
+                    <a href="#" class="blog-title">How Photography is Dangerous at different places</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut laboriosam expedita rem ex maxime? Aut laboriosam magni iure, deleniti ducimus a illum mollitia aspernatur vero, dolorem dolorum cumque eveniet in.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="./images/blog3.jpg " alt="">
+                </div>
+                <div class="blog-text">
+                    <span>24 September 2024 /Hindu Tempels</span>
+                    <a href="#" class="blog-title">Tourism of India Got a BOOM in Heritage Places</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut laboriosam expedita rem ex maxime? Aut laboriosam magni iure, deleniti ducimus a illum mollitia aspernatur vero, dolorem dolorum cumque eveniet in.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 </body>
 
