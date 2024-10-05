@@ -3,8 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  /* overflow: hidden; */
 }
-body {
+
+header {
   min-height: 100vh;
   /* background-color: rgb(252, 228, 228); */
   background-image: url(./images/pexels-pixabay-268533.jpg);
@@ -12,9 +14,10 @@ body {
   background-size: cover;
   background-position: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 0;
 }
-#logo{
-    font-weight: 400;
+#logo {
+  font-weight: 400;
 }
 nav {
   /* background-color: rgb(252, 228, 228); */
@@ -39,7 +42,7 @@ nav a {
   text-decoration: none;
   display: flex;
   align-items: center;
-  color:#fff
+  color: #000000;
 }
 nav a:hover {
   background-color: #f0f0f0;
@@ -48,87 +51,174 @@ nav a:hover {
 nav li:first-child {
   margin-right: auto;
 }
-.sidebar{
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 250px;
-    z-index: 1;
-    background-color: rgba(255,255,255,0.2);
-    backdrop-filter: blur(10px);
-    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start ;
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .sidebar li {
-    width: 100%;
+  width: 100%;
 }
-.sidebar a{
-    width: 100%;
+.sidebar a {
+  width: 100%;
 }
-.menuButton{
-    display: none;
+.menuButton {
+  display: none;
 }
 
 /* header css */
 
-
-.main1{
-    display: flex;
-    margin: 4rem;
-    padding: 2rem;
-    gap: 3.5rem;
+.main1 {
+  display: flex;
+  /* margin: 4rem; */
+  /* padding: 2rem; */
+  margin-left: 4rem;
+  padding-left: 2rem;
+  margin-bottom: 4rem;
+  gap: 3.5rem;
 }
 
-.content{
-     margin-top: 14%;
-     color: #fff;
-     max-width: 620px;
-
+.content {
+  margin-top: 14%;
+  color: #fff;
+  max-width: 620px;
 }
-.content h1{
-    font-size: 70px;
-    font-weight: 600;
-    line-height: 85px;
-    margin-bottom: 25px;
-}
-
-.content form{
-    display: flex;
-    align-items: center;
-    background: #fff;
-    border-radius: 5px;
-    padding: 10px;
-    margin-top: 30px;
+.content h1 {
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 85px;
+  margin-bottom: 25px;
 }
 
-.content form input{
-    border: 0;
-    outline: 0;
+.content form {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.content form input {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.btn {
+  font-size: 15px;
+  padding: 10px 30px;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Destination section CSS */
+
+.destination{
+  width: 100vw;
+  height: 100vh;
+  background: url(./images/destinationbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 0;
+}
+
+.big_d{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4rem;
+  align-items: center;
+}
+
+.destiny{
+  height: 250px;
+  width: 200px;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 15px;
+  border-radius: 10px;
+}
+.image{
+  position: relative;
+}
+
+#img{
+   height: 275px;
+   width: 225px;
+   display: block;
+   margin: auto;
+   border-radius: 20px;
+   transition: 1s;
+}
+img:hover{
+  transform: scale(1.25);
+}
+.text{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.6s;
+}
+.text:hover{
+  opacity: 1;
+}
+.text h1{
+  font-size: 2.2rem;
+  color: #fff;
+  margin-bottom: 15px;
+  
+}
+.text p{
+  font-size: 1.2rem;
+  color: #fff;
+}
+.text > *{
+  transform: translateY(25px);
+  transition: transform 0.6s;
+}
+.text:hover > *{
+  transform: translateY(0px);
+}
+
+ @media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menuButton {
+    display: block;
+  }
+}
+@media (max-width: 400px) {
+  .sidebar {
     width: 100%;
-    font-size: 16px;
-    padding-left: 10px;
-}
+  }
+} 
 
-.btn{
-    font-size: 15px ;
-    padding: 10px 30px;
-}
 
-@media (max-width:800px){
-    .hideOnMobile{
-        display:none;
-    }
-    .menuButton{
-        display: block;
-    }
-}
-@media (max-width:400px) {
-    .sidebar{
-        width: 100%;
-    }
-}
+/*  */
