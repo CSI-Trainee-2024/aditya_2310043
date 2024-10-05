@@ -166,10 +166,10 @@ body {
    display: block;
    margin: auto;
    border-radius: 20px;
-   transition: 1s;
+   transition: 0.5s;
 }
-img:hover{
-  transform: scale(1.25);
+#img:hover{
+  transform: scale(1.12);
 }
 .text{
   width: 100%;
@@ -182,6 +182,7 @@ img:hover{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-radius:20px;
   opacity: 0;
   transition: 0.6s;
 }
@@ -204,6 +205,101 @@ img:hover{
 }
 .text:hover > *{
   transform: translateY(0px);
+}
+
+/* Packages Section CSS*/
+  
+.packages{
+  height: 100vh;
+  width: 100vw;
+  background: url(./images/Packagesbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.packages .heading{
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f0f0f0;
+  text-align: center;
+  padding-top: 2.5rem;
+}
+.heading p{
+  font-size: 15px;
+}
+
+.wrapper{
+  padding: 10px 10%;
+}
+
+.card-area{
+  padding: 50px 0;
+}
+.box-area{
+  display: grid;
+  grid-template-columns: repeat(auto-fit , minmax(250px , 1fr));
+  grid-gap:40px;
+  margin-top: 50px;
+}
+.box{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5) ;        
+}
+
+.box img{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+.overlay{
+  height: 0;
+  width: 100%;
+  background: linear-gradient(transparent , #1c1c1c 58%);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+
+.overlay h3{
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #f0f0f0;
+  margin-top: 80%;
+  font-family: bebas neue;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+.overlay p{
+  color: #f0f0f0;
+}
+.overlay a{
+  margin-top: 10px;
+  color: #262626;
+  text-decoration: none;
+  font-size: 14px;
+  background: #fff;
+  border-radius: 50px;
+  padding: 5px 15px;
+}
+.box:hover img{
+  transform: scale(1.2);
+}
+.box:hover .overlay{
+  height: 100%;
 }
 
  @media (max-width: 800px) {
