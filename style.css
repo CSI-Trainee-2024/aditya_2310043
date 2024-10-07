@@ -149,9 +149,10 @@ body {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 25px;
   margin: 0 auto;
   align-items: center;
+  padding: 40px;
 }
 
 .destiny{
@@ -269,19 +270,20 @@ body {
   }
 } */
 
+
 @media (max-width:1250px) {
   .destination{
-    height:120%;
+    height:100%;
+  }
+}
+@media (max-width:1000px) {
+  .destination{
+    height:100%;
   }
 }
 @media (max-width:800px) {
   .destination{
-    height:120%;
-  }
-}
-@media (max-width:600px) {
-  .destination{
-    height:120%;
+    height:100%;
   }
 }
 
