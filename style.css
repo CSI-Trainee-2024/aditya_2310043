@@ -214,7 +214,7 @@ body {
   transform: translateY(0px);
 }
 
-@media (max-width:1150px) {
+/* @media (max-width:1150px) {
   .destiny{
     height: 200px;
     width: 150px;
@@ -267,7 +267,26 @@ body {
     height: 125px;
     width: 75px;
   }
+} */
+
+@media (max-width:1250px) {
+  .destination{
+    height:120%;
+  }
 }
+@media (max-width:800px) {
+  .destination{
+    height:120%;
+  }
+}
+@media (max-width:600px) {
+  .destination{
+    height:120%;
+  }
+}
+
+
+
 
 /* Packages Section CSS*/
   
@@ -364,7 +383,27 @@ body {
   height: 100%;
 } 
 
+@media (max-width:1400px) {
+  .packages{
+    height:100%;
+  }
+}
 
+@media (max-width:1250px) {
+  .packages{
+    height:100%;
+  }
+}
+@media (max-width:800px) {
+  .packages{
+    height:100%;
+  }
+}
+@media (max-width:600px) {
+  .packages{
+    height:100%;
+  }
+}
 
 
   /* Blog Page Css */
